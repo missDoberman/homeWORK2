@@ -2,12 +2,16 @@
 // Пример 1
 // Если переменная num = 5, то выведите 'true' в console.log, иначе выведите 
 //'false'.
-// let num = 5;
-// if(num === 5){
-//     console.log(true);
-// }else{
-//     console.log(false);
-// }
+
+let num = 5;
+if(num == 5){
+    console.log(true);
+}else{
+    console.log(false);
+}
+
+
+
 // Пример 2
 // У вас есть дом. В доме 3 подъезда, в каждом подъезде по 10 квартир.
 // 1 подъезд = 1 - 10;
@@ -15,44 +19,59 @@
 // 3 подъезд = 21 - 30;
 // При введении номера квартиры в консоль должно выводиться номер подъезда
 // Если вводить не существующую квартиру должно выводиться 'нет такой квартиры'
-// let number = 100;
-// if (number > 0 && number <= 10){
-//     console.log('1 подъезд');
-// }else if(number > 10 && number <=20){
-//     console.log('2 подъезд');
-// }else if(number > 20 && number <=30){
-//     console.log('3 подъезд');
-// }else{
-//     console.log('нет такой квартиры');
-// }
+
+let number = 50;
+if(number > 0 && number <= 10){
+    console.log('1 подъезд');
+}else if(number > 10 && number <= 20){
+    console.log('2 подъезд');
+}else if(number > 20 && number <= 30){
+    console.log('3 подъезд');
+}else{
+    console.log('нет  такой квартиры');
+}
+
+
+
 // Циклы
 // Пример 3
 // Выведите столбец чисел от 1 до 10.
-// let i = 1;
-// while(i <= 10){
-//     console.log(i);
-//     i++;
-// }
+
+let i = 1;
+while(i<=10){
+    console.log(i);
+    i++;
+}
+
+
 // Пример 4
 // Дан массив с элементами [1,2,3]. C помощью цикла for выведите все 
 // эти элементы.
+
 // let arr = [1,2,3];
 // for(let i = 0; i < arr.length; i++){
 //     console.log(arr[i]);
 // }
+
+
+
 // Пример 5
 // Дан массив с элементами [2,3,4,5]. С помощью цикла for найдите произведение
 // элементов этого массива.
-// let result = 1;
-// let arr = [2,3,4,5];
-// for(let i = 0; i < arr.length; i++){
-//     result = result * arr[i];
-//     // 1*2 = 2
-//     //2*3 = 6
-//     // 6 * 4 = 24
-//     // 24 * 5 = 120
-// }
-// console.log(result);
+
+let result = 1;
+let arr = [2,3,4,5];
+for(let i = 0; i < arr.length; i++){
+    result = result * arr[i];
+    // 1*2=2
+    // 2*3=6
+    // 6*4=24
+    // 24*5=120
+}
+console.log(result);
+
+
+
 
 // Домашнее задание
 // Условия
@@ -60,6 +79,22 @@
 // В переменной minute лежит число от 0 до 59. 
 // Определите в какую четверть часа попадает это число 
 // (в первую, вторую, третью или четвертую).
+
+let minute = 50;
+if(minute >= 0 && minute <= 15){
+    console.log('1 четверть');
+}else if(minute > 15 && minute <= 30){
+    console.log('2 четверть');
+}else if(minute > 30 && minute <= 45){
+    console.log('3 четверть');
+}else if(minute > 45 && minute <= 59){
+    console.log('4 четверть');
+}
+
+
+
+
+
 // Пример 2
 // Переменная lang может принимать 2 значения: 'ru' 'en'. 
 // Если она имеет значение 'ru', то в переменную arr 
